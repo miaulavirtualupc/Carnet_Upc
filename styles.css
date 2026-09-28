@@ -267,3 +267,27 @@ and (max-width: 400px) {
         transform: translateX(-50%) !important;
     }
 }
+
+/* AJUSTE FINAL REDMI */
+@media only screen and (min-width: 385px) and (max-width: 400px) {
+
+    #reloj {
+        left: 50% !important;
+        top: 220px !important;
+
+        transform: translateX(-50%) !important;
+
+        text-align: center !important;
+        white-space: nowrap;
+    }
+
+    #fechaHoy {
+        left: 50% !important;
+        top: 260px !important;
+
+        transform: translateX(-50%) !important;
+
+        text-align: center !important;
+        white-space: nowrap;
+    }
+}
