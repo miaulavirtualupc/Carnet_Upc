@@ -20,8 +20,8 @@ body {
 
 #imagen_photocheck {
     position: absolute;
-    width: 175px;
-    height: 225px;
+    width: 135px;
+    height: 285px;
     display: flex;
     justify-content: center;
     align-items: center;
