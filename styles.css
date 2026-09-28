@@ -49,11 +49,11 @@ body {
         background-position: calc(50% - 5px) 29px;
     }
     #reloj {
-        left: 160px; /* Ajusta este valor según sea necesario */
+        left: 150px; /* 10px a la izquierda */
         top: 145px;
     }
     #fechaHoy {
-        left: 150px; /* Ajusta este valor según sea necesario */
+        left: 140px; /* 10px a la izquierda */
         top: 210px;
     }
 }
@@ -78,7 +78,7 @@ body {
     color: #333;
     position: absolute;
     top: 90px;
-    left: 150px;
+    left: 140px;
     z-index: 15; /* Mayor z-index para estar por encima del fondo */
 }
 
@@ -88,7 +88,7 @@ body {
     font-size: 14px;
     position: absolute;
     top: 160px;
-    left: 150px;
+    left: 140px;
     z-index: 15; /* Mayor z-index para estar por encima del fondo */
 }
 
@@ -102,7 +102,7 @@ body {
     }
 
     #reloj {
-        left: calc(50% - 8px);
+        left: calc(50% - 18px);
         top: 90px;
         transform: translateX(-50%);
         text-align: center;
@@ -110,7 +110,7 @@ body {
     }
 
     #fechaHoy {
-        left: calc(50% - 8px);
+        left: calc(50% - 18px);
         top: 160px;
         transform: translateX(-50%);
         text-align: center;
@@ -127,12 +127,12 @@ body {
 @media only screen and (min-width: 385px) and (max-width: 400px) {
 
     #reloj {
-        left: calc(50% - 15px) !important;
+        left: calc(50% - 25px) !important;
         transform: translateX(-50%) !important;
     }
 
     #fechaHoy {
-        left: calc(50% - 15px) !important;
+        left: calc(50% - 25px) !important;
         transform: translateX(-50%) !important;
     }
 }
