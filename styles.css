@@ -219,3 +219,28 @@ and (max-width: 400px) {
         transform: translateX(-50%) !important;
     }
 }
+
+
+/* AJUSTE PARA EL TELÉFONO DE TU CAPTURA */
+@media only screen and (min-width: 385px) and (max-width: 400px) {
+
+    #reloj {
+        /* centrado dentro del rectángulo morado */
+        left: 50% !important;
+        top: 125px !important;
+
+        transform: translateX(-50%) !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+    }
+
+    #fechaHoy {
+        /* centrado debajo del rectángulo */
+        left: 50% !important;
+        top: 165px !important;
+
+        transform: translateX(-50%) !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+    }
+}
