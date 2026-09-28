@@ -2,7 +2,7 @@ body {
     background-image: url('carnet.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; /* Para asegurarte de que la imagen cubra todo el fondo */
+    background-size: cover;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -22,27 +22,20 @@ body {
     position: absolute;
     width: 180px;
     height: 230px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     z-index: 10;
-
     top: 40%;
     left: 48%;
-
     transform: translate(-50%, -50%);
-
     overflow: hidden;
     border-radius: 50%;
 }
 
-
 #imagen_photocheck img {
     width: 99%;
     height: auto;
-
     object-fit: cover;
 }
 
@@ -62,14 +55,13 @@ and (max-height: 844px) {
         background-position: calc(50% - 5px) 29px;
     }
 
-    /* Hora 80px más abajo */
     #reloj {
         top: 190px;
+        left: 110px; /* 30px más izquierda */
     }
 
-    /* Fecha 20px más a la izquierda */
     #fechaHoy {
-        left: 115px;
+        left: 75px; /* 40px más izquierda */
     }
 }
 
@@ -91,17 +83,12 @@ and (max-height: 932px) {
     }
 
     #reloj {
-        left: 150px;
-
-        /* Antes: 165px */
+        left: 120px; /* antes 150px */
         top: 245px;
     }
 
     #fechaHoy {
-
-        /* Antes: 135px */
-        left: 115px;
-
+        left: 75px; /* antes 115px */
         top: 210px;
     }
 }
@@ -113,16 +100,12 @@ and (max-height: 932px) {
 
 #gifContainer {
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-top: -120px;
-
     z-index: 5;
 }
-
 
 #gifContainer img {
     max-width: 100%;
@@ -131,46 +114,38 @@ and (max-height: 932px) {
 
 
 /* ==============================
-   RELOJ - CONFIGURACIÓN GENERAL
+   RELOJ GENERAL
    ============================== */
 
 #reloj {
     font-family: 'Cabin', sans-serif;
-
     font-size: 30px;
-
     color: #333;
-
     position: absolute;
 
-    /* Antes: 110px
-       Ahora: 80px más abajo */
     top: 190px;
 
-    left: 140px;
+    /* Antes 140px */
+    left: 110px;
 
     z-index: 15;
 }
 
 
 /* ==============================
-   FECHA - CONFIGURACIÓN GENERAL
+   FECHA GENERAL
    ============================== */
 
 #fechaHoy {
     font-family: 'Cabin', sans-serif;
-
     color: #4b4b4b;
-
     font-size: 14px;
-
     position: absolute;
 
     top: 160px;
 
-    /* Antes: 135px
-       Ahora: 20px más izquierda */
-    left: 115px;
+    /* Antes 115px */
+    left: 75px;
 
     z-index: 15;
 }
@@ -190,45 +165,30 @@ and (height: 873px) {
         background-position: center top;
     }
 
-
-    /* HORA */
     #reloj {
+        /* Antes: 50% - 23px */
+        left: calc(50% - 53px);
 
-        left: calc(50% - 23px);
-
-        /* Antes: 110px
-           Ahora: 80px más abajo */
         top: 190px;
 
         transform: translateX(-50%);
-
         text-align: center;
-
         white-space: nowrap;
     }
 
-
-    /* FECHA */
     #fechaHoy {
-
-        /* Antes: 50% - 23px
-           Ahora: 20px más izquierda */
-        left: calc(50% - 43px);
+        /* Antes: 50% - 43px */
+        left: calc(50% - 83px);
 
         top: 160px;
 
         transform: translateX(-50%);
-
         text-align: center;
-
         white-space: nowrap;
     }
 
-
     #imagen_photocheck {
-
         left: 50%;
-
         transform: translate(-50%, -50%);
     }
 }
@@ -243,25 +203,18 @@ and (height: 873px) {
 and (min-width: 385px)
 and (max-width: 400px) {
 
-
-    /* HORA */
     #reloj {
+        /* Antes: 50% - 30px */
+        left: calc(50% - 60px) !important;
 
-        left: calc(50% - 30px) !important;
-
-        /* Fuerza los 80px adicionales */
         top: 190px !important;
 
         transform: translateX(-50%) !important;
     }
 
-
-    /* FECHA */
     #fechaHoy {
-
-        /* Antes: 50% - 30px
-           Ahora: 20px más izquierda */
-        left: calc(50% - 50px) !important;
+        /* Antes: 50% - 50px */
+        left: calc(50% - 90px) !important;
 
         transform: translateX(-50%) !important;
     }
