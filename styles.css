@@ -56,12 +56,15 @@ and (max-height: 844px) {
     }
 
     #reloj {
-        top: 190px;
-        left: 110px; /* 30px más izquierda */
+        /* antes 190px */
+        top: 220px;
+
+        left: 110px;
     }
 
     #fechaHoy {
-        left: 75px; /* 40px más izquierda */
+        /* antes 75px */
+        left: 55px;
     }
 }
 
@@ -83,12 +86,16 @@ and (max-height: 932px) {
     }
 
     #reloj {
-        left: 120px; /* antes 150px */
-        top: 245px;
+        left: 120px;
+
+        /* antes 245px */
+        top: 275px;
     }
 
     #fechaHoy {
-        left: 75px; /* antes 115px */
+        /* antes 75px */
+        left: 55px;
+
         top: 210px;
     }
 }
@@ -123,9 +130,9 @@ and (max-height: 932px) {
     color: #333;
     position: absolute;
 
-    top: 190px;
+    /* antes 190px */
+    top: 220px;
 
-    /* Antes 140px */
     left: 110px;
 
     z-index: 15;
@@ -144,8 +151,8 @@ and (max-height: 932px) {
 
     top: 160px;
 
-    /* Antes 115px */
-    left: 75px;
+    /* antes 75px */
+    left: 55px;
 
     z-index: 15;
 }
@@ -166,10 +173,10 @@ and (height: 873px) {
     }
 
     #reloj {
-        /* Antes: 50% - 23px */
         left: calc(50% - 53px);
 
-        top: 190px;
+        /* antes 190px */
+        top: 220px;
 
         transform: translateX(-50%);
         text-align: center;
@@ -177,8 +184,9 @@ and (height: 873px) {
     }
 
     #fechaHoy {
-        /* Antes: 50% - 43px */
-        left: calc(50% - 83px);
+        /* antes 50% - 83px */
+        /* 20px adicionales a la izquierda */
+        left: calc(50% - 103px);
 
         top: 160px;
 
@@ -204,17 +212,18 @@ and (min-width: 385px)
 and (max-width: 400px) {
 
     #reloj {
-        /* Antes: 50% - 30px */
         left: calc(50% - 60px) !important;
 
-        top: 190px !important;
+        /* antes 190px */
+        top: 220px !important;
 
         transform: translateX(-50%) !important;
     }
 
     #fechaHoy {
-        /* Antes: 50% - 50px */
-        left: calc(50% - 90px) !important;
+        /* antes 50% - 90px */
+        /* 20px adicionales a la izquierda */
+        left: calc(50% - 110px) !important;
 
         transform: translateX(-50%) !important;
     }
