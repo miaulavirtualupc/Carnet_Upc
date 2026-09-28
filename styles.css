@@ -136,3 +136,8 @@ body {
         transform: translateX(-50%) !important;
     }
 }
+
+
+html, body {
+    background: red !important;
+}
