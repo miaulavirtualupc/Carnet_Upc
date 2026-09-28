@@ -13,6 +13,11 @@ body {
     overflow-y: auto;
 }
 
+
+/* ==============================
+   FOTO DEL PHOTOCHECK
+   ============================== */
+
 #imagen_photocheck {
     position: absolute;
     width: 180px;
@@ -71,15 +76,15 @@ and (max-height: 932px) {
     #reloj {
         left: 150px;
 
-        /* 25px más abajo */
-        /* antes 145px */
+        /* 25px hacia abajo */
+        /* Original: 145px */
         top: 170px;
     }
 
     #fechaHoy {
-        /* 30px más a la izquierda */
-        /* antes 140px */
-        left: 110px;
+        /* 20px hacia la izquierda */
+        /* Original: 140px */
+        left: 120px;
 
         top: 210px;
     }
@@ -115,8 +120,8 @@ and (max-height: 932px) {
     color: #333;
     position: absolute;
 
-    /* 25px más abajo */
-    /* antes 90px */
+    /* 25px hacia abajo */
+    /* Original: 90px */
     top: 115px;
 
     left: 140px;
@@ -137,9 +142,9 @@ and (max-height: 932px) {
 
     top: 160px;
 
-    /* 30px más a la izquierda */
-    /* antes 140px */
-    left: 110px;
+    /* 20px hacia la izquierda */
+    /* Original: 140px */
+    left: 120px;
 
     z-index: 15;
 }
@@ -162,8 +167,8 @@ and (height: 873px) {
     #reloj {
         left: calc(50% - 18px);
 
-        /* 25px más abajo */
-        /* antes 90px */
+        /* 25px hacia abajo */
+        /* Original: 90px */
         top: 115px;
 
         transform: translateX(-50%);
@@ -172,9 +177,9 @@ and (height: 873px) {
     }
 
     #fechaHoy {
-        /* 30px más a la izquierda */
-        /* antes: 50% - 18px */
-        left: calc(50% - 48px);
+        /* 20px hacia la izquierda */
+        /* Original: calc(50% - 18px) */
+        left: calc(50% - 38px);
 
         top: 160px;
 
@@ -202,16 +207,16 @@ and (max-width: 400px) {
     #reloj {
         left: calc(50% - 25px) !important;
 
-        /* 25px más abajo */
+        /* 25px hacia abajo */
         top: 115px !important;
 
         transform: translateX(-50%) !important;
     }
 
     #fechaHoy {
-        /* 30px más a la izquierda */
-        /* antes: 50% - 25px */
-        left: calc(50% - 55px) !important;
+        /* 20px hacia la izquierda */
+        /* Original: calc(50% - 25px) */
+        left: calc(50% - 45px) !important;
 
         transform: translateX(-50%) !important;
     }
