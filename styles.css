@@ -22,13 +22,18 @@ body {
     position: absolute;
     width: 180px;
     height: 230px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     z-index: 10;
+
     top: 40%;
     left: 48%;
+
     transform: translate(-50%, -50%);
+
     overflow: hidden;
     border-radius: 50%;
 }
@@ -56,12 +61,15 @@ and (max-height: 844px) {
     }
 
     #reloj {
-        top: 190px;
-        left: 110px; /* 30px más izquierda */
+        /* 30px más abajo */
+        top: 220px;
+
+        left: 110px;
     }
 
     #fechaHoy {
-        left: 75px; /* 40px más izquierda */
+        /* 40px más a la izquierda */
+        left: 35px;
     }
 }
 
@@ -83,12 +91,18 @@ and (max-height: 932px) {
     }
 
     #reloj {
-        left: 120px; /* antes 150px */
-        top: 245px;
+        left: 120px;
+
+        /* Antes 245px */
+        /* Ahora 30px más abajo */
+        top: 275px;
     }
 
     #fechaHoy {
-        left: 75px; /* antes 115px */
+        /* Antes 75px */
+        /* Ahora 40px más izquierda */
+        left: 35px;
+
         top: 210px;
     }
 }
@@ -100,10 +114,13 @@ and (max-height: 932px) {
 
 #gifContainer {
     width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin-top: -120px;
+
     z-index: 5;
 }
 
@@ -119,13 +136,17 @@ and (max-height: 932px) {
 
 #reloj {
     font-family: 'Cabin', sans-serif;
+
     font-size: 30px;
+
     color: #333;
+
     position: absolute;
 
-    top: 190px;
+    /* Antes 190px */
+    /* Ahora 30px más abajo */
+    top: 220px;
 
-    /* Antes 140px */
     left: 110px;
 
     z-index: 15;
@@ -138,14 +159,18 @@ and (max-height: 932px) {
 
 #fechaHoy {
     font-family: 'Cabin', sans-serif;
+
     color: #4b4b4b;
+
     font-size: 14px;
+
     position: absolute;
 
     top: 160px;
 
-    /* Antes 115px */
-    left: 75px;
+    /* Antes 75px */
+    /* Ahora 40px más izquierda */
+    left: 35px;
 
     z-index: 15;
 }
@@ -165,30 +190,45 @@ and (height: 873px) {
         background-position: center top;
     }
 
+
+    /* HORA */
     #reloj {
-        /* Antes: 50% - 23px */
+
         left: calc(50% - 53px);
 
-        top: 190px;
+        /* Antes 190px */
+        /* Ahora 30px más abajo */
+        top: 220px;
 
         transform: translateX(-50%);
+
         text-align: center;
+
         white-space: nowrap;
     }
 
+
+    /* FECHA */
     #fechaHoy {
-        /* Antes: 50% - 43px */
-        left: calc(50% - 83px);
+
+        /* Antes 50% - 83px */
+        /* Ahora 40px más izquierda */
+        left: calc(50% - 123px);
 
         top: 160px;
 
         transform: translateX(-50%);
+
         text-align: center;
+
         white-space: nowrap;
     }
 
+
     #imagen_photocheck {
+
         left: 50%;
+
         transform: translate(-50%, -50%);
     }
 }
@@ -203,18 +243,26 @@ and (height: 873px) {
 and (min-width: 385px)
 and (max-width: 400px) {
 
+
+    /* HORA */
     #reloj {
-        /* Antes: 50% - 30px */
+
         left: calc(50% - 60px) !important;
 
-        top: 190px !important;
+        /* Antes 190px */
+        /* Ahora 30px más abajo */
+        top: 220px !important;
 
         transform: translateX(-50%) !important;
     }
 
+
+    /* FECHA */
     #fechaHoy {
-        /* Antes: 50% - 50px */
-        left: calc(50% - 90px) !important;
+
+        /* Antes 50% - 90px */
+        /* Ahora 40px más izquierda */
+        left: calc(50% - 130px) !important;
 
         transform: translateX(-50%) !important;
     }
