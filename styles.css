@@ -102,7 +102,7 @@ body {
     }
 
     #reloj {
-        left: 50%;
+        left: calc(50% - 8px);
         top: 90px;
         transform: translateX(-50%);
         text-align: center;
@@ -110,7 +110,7 @@ body {
     }
 
     #fechaHoy {
-        left: 50%;
+        left: calc(50% - 8px);
         top: 160px;
         transform: translateX(-50%);
         text-align: center;
